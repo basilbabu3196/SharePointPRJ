@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: #dfe6e9;
+    // width: 100vw;
+    // height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+}
+.calendar {
+    margin: auto;
+    width: 710px;
+    height: 650px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 30px;
+    text-align: center;
+   background-image: url("headbg.jpg");
+    color: rgb(167, 228, 111);
+}
+
+.weekdays {
+    background-color: #b1b1b1;
+    color: rgb(0, 0, 0);
+    padding: 7px 0;
+    display: flex;
+}
+
+.days {
+    font-weight: 300;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.weekdays div,
+.days div {
+    text-align: center;
+    width: 14.28%;
+   
+   
+}
+
+.days div {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    transition: all 0.4s;
+    
+}
+
+.prev_date {
+    color: #999;
+}
+.prev_date .tooltiptex {
+  position: fixed;
+  top:0px;
+
+  visibility: hidden;
+}
+.prev_date:hover .tooltiptex {
+  visibility: visible;
+}
+
+#card
+{
+  border: rgba(212, 205, 218, 0.445);
+  color: #130f30;
+  border-style: double;
+ 
+}
+#card #tooltiptext {
+  display: flex;
+  position: absolute;
+ 
+ 
+  
+  visibility: hidden;
+  color: #999;
+}
+#card:hover #tooltiptext {
+  display: flex;
+  visibility: visible;
+  color: #999;
+}
+
+.currentDate {
+    background-color: #449ccf;
+    color: rgb(0, 0, 0);
+}
+
+.days div:hover {
+    cursor: pointer;
+    background-color: #dfe6e9
+}
+
+.prev,
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 23px;
+    background-color: rgba(31, 107, 247, 0.315);
+    transition: all 0.4s;
+}
+
+.prev:hover,
+.next:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#month {
+    font-size: 30px;
+    font-weight: 500;
+}
+.event_add
+{
+  color: #e9125a;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ 
+  
+  /* Set a style for all buttons */
+ 
+  
+ 
+ 
+  
+  .disevent
+  {   display: flex;
+      width: 800px;
+      height: 300px;
+      margin: 35px;
+      border-style: groove;
+      border-color: blueviolet;
+      color: blueviolet;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 50px;
+  }
+ 
+    .addEvt
+    {
+      position: absolute;
+      display: flex;
+      top: 0px;
+      left: 200px;
+      font-size: larger;
+      font-weight: 800;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: rgb(94, 59, 190);
+    }
+    .listdata
+    {
+     
+      
+      padding: 5px 2px;
+      background-color: rgb(120, 221, 73);
+      border-radius: 5px;
+      width: 400px;
+    }
+    .mdj
+    {
+     
+      position: absolute;
+      left:100px;
+      color: rgb(25, 0, 255);
+      padding: 5px 2px;
+      display: flex;
+      font-weight: bold;
+
+    }
+    .model
+    {  
+        display: flex;
+        flex-wrap: wrap;
+      
+        justify-content: center; 
+    }
+    .card {
+ 
+      position: absolute;
+       top: 60px;
+       background-color: #dfe6e9;
+      
+      margin: 10px;
+      width: 600px;
+      height: 520px;
+      border: 1px solid rgb(185, 148, 148);
+      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    } 
+    
+    .borderaddevent
+    {
+      position: absolute;
+      top: 50px;
+      left: 30px;
+      border: rgba(0, 0, 0, 0.2);
+      border-style: solid;
+      width: 550px;
+      height: 400px;
+    }
+    .heading
+    {
+align-items: center;
+    }
+    .addtext {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      height: 50px;
+      width: 400px;
+    }
+   .addcard {
+      
+      background: rgb(65, 91, 150);
+      position: absolute;
+      right: 30px;
+      bottom: 10px;
+      color: white;
+      height: 50px;
+      width: 140px;
+      }
+      .x1
+      {
+        position: absolute;
+        top:0px;
+        right: 0px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(235, 0, 0);
+        color: rgb(255, 255, 255);
+      }
+      .data_eve_list
+      {
+        position: absolute;
+        left: 100px;
+        width: 400px;
+        height: 30px;
+        background-color: rgb(138, 197, 82);
+        border-radius: 50px 20px;
+      
+      }
+  
